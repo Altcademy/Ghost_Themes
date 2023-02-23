@@ -1,7 +1,7 @@
 {
     "name": "headlinealt",
-    "description": "A Ghost theme",
-    "version": "1.1.1",
+    "description": "A Ghost theme for Altcademy Blog",
+    "version": "1.1.2",
     "engines": {
         "ghost": ">=4.0.0"
     },
@@ -57,10 +57,6 @@
             },
             "white_publication_logo_for_transparent_header": {
                 "type": "image"
-            },
-            "email_signup_text": {
-                "type": "text",
-                "default": "Don't miss out on the latest news. Sign up now to get access to the library of members-only articles."
             },
             "footer_text": {
                 "type": "text"
