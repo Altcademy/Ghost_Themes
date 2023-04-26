@@ -1,7 +1,6 @@
 {{!< default}}
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
-
 <style>
 .gh-content {
     position: relative;
@@ -16,14 +15,19 @@
     list-style: none;
 }
 
-.gh-sidebar {
-    margin-top: 4vmin;
-    position: relative;
-}
-
 @media (min-width: 1200px) {
+     .gh-sidebar {
+        position: absolute; 
+        top: 15px;
+        bottom: 0;
+        margin-top: 4vmin;
+        grid-column: wide-start / main-start; /* Place the TOC to the left of the content */
+        z-index: 1;
+    }
+   
     .gh-toc {
         position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
+        top: 4vmin;
     }
 }
 
@@ -69,6 +73,7 @@
             </header>
 
             <section class="gh-content gh-canvas">
+                <aside class="gh-sidebar"><div class="gh-toc"></div></aside> {{! The TOC will be inserted here }}
                 {{content}}
             </section>
         </article>
@@ -90,5 +95,6 @@
         headingSelector: 'h1, h2, h3, h4',
         // Ensure correct positioning
         hasInnerContainers: true,
+        collapseDepth: 3,
     });
 </script>
