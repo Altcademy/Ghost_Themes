@@ -39,6 +39,10 @@
 .gh-toc .is-active-link::before {
     background-color: var(--ghost-accent-color); /* Defines TOC   accent color based on Accent color set in Ghost Admin */
 } 
+
+.gh-article-tag a {
+    color: var(--ghost-accent-color);
+}
 </style>
 
 
@@ -46,8 +50,16 @@
     {{#post}}
         <article class="gh-article {{post_class}}">
             <header class="gh-article-header gh-canvas">
-                {{#if primary_tag}}
-                    <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+                {{#if tags}}
+                    <div class="gh-article-tag">
+                        {{#foreach tags}}
+                            {{#if @last }}
+                                <a href="{{url}}">{{name}}</a>
+                            {{else}}
+                                <a href="{{url}}">{{name}}</a> ·
+                            {{/if}}
+                        {{/foreach}}
+                    </div>
                 {{/if}}
 
                 <h1 class="gh-article-title">{{title}}</h1>

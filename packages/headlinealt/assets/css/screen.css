@@ -59,7 +59,7 @@ body:not(.is-head-transparent) .gh-head-logo img + img {
 
 body:not(.home-template) .gh-topic-grid .gh-topic-content {
     row-gap: 48px;
-    justify-items: center;
+/*    justify-items: center;*/
 }
 
 .gh-topic-footer {
