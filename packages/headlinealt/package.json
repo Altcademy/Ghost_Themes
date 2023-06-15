@@ -1,7 +1,7 @@
 {
     "name": "headlinealt",
     "description": "A Ghost theme for Altcademy Blog",
-    "version": "1.1.8",
+    "version": "1.1.9",
     "engines": {
         "ghost": ">=4.0.0"
     },
@@ -42,17 +42,27 @@
         "custom": {
             "title_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Modern sans-serif"
             },
             "body_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Elegant serif"
             },
             "header_style": {
                 "type": "select",
-                "options": ["Light", "Accent color", "Dark"],
+                "options": [
+                    "Light",
+                    "Accent color",
+                    "Dark"
+                ],
                 "default": "Light"
             },
             "white_publication_logo_for_transparent_header": {
@@ -63,11 +73,13 @@
             },
             "enter_tag_slugs_for_primary_sections": {
                 "type": "text",
-                "group": "homepage"
+                "group": "homepage",
+                "default": "featured"
             },
             "enter_tag_slugs_for_secondary_sections": {
                 "type": "text",
-                "group": "homepage"
+                "group": "homepage",
+                "default": "career,portfolio,beginners,coding-interview,html,css,javascript,react,ruby,rails,typescript,python,fun"
             }
         }
     }
