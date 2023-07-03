@@ -1,7 +1,7 @@
 {
     "name": "headlinealt",
     "description": "A Ghost theme for Altcademy Blog",
-    "version": "1.1.10",
+    "version": "1.1.11",
     "engines": {
         "ghost": ">=4.0.0"
     },
