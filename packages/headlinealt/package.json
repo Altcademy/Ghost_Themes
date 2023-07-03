@@ -1,7 +1,7 @@
 {
     "name": "headlinealt",
     "description": "A Ghost theme for Altcademy Blog",
-    "version": "1.1.9",
+    "version": "1.1.10",
     "engines": {
         "ghost": ">=4.0.0"
     },
@@ -79,7 +79,7 @@
             "enter_tag_slugs_for_secondary_sections": {
                 "type": "text",
                 "group": "homepage",
-                "default": "career,portfolio,beginners,coding-interview,html,css,javascript,react,ruby,rails,typescript,python,fun"
+                "default": "career,portfolio,beginners,coding-interview,html,css,javascript,react,ruby,rails,typescript,python,algo,fun"
             }
         }
     }
