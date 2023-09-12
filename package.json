@@ -62,5 +62,6 @@
         "extends": [
             "@tryghost:theme"
         ]
-    }
+    },
+    "packageManager": "yarn@1.22.19"
 }
