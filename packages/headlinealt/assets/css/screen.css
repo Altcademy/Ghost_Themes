@@ -1267,3 +1267,21 @@ h4.alt-ad-header {
 .programs-ad {
     /*background-color: #fafafa;*/
 }
+
+.mt-4 {
+    margin-top: 24px;
+}
+
+.ai-card {
+    border-top: 3px solid #ffbf00;
+}
+
+.ai-card h2.explanation {
+    font-size: 20.8px;
+    line-height: 32px !important;
+    font-weight: 300;
+}
+
+.svg-inline--fa {
+    max-width: 20px;
+}
